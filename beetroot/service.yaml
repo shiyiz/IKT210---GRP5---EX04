@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: beetroot-entrypoint
+spec:
+  type: NodePort
+  selector:
+    run: beetroot
+  ports:
+  - port: 8080
+    targetPort: 8080
+    nodePort: 30040

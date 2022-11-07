@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: beetroot
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      run: beetroot
+  template:
+    metadata:
+      labels:
+        run: beetroot
+    spec:
+      containers:
+      - name: beetroot
+        image: shiyiz/test:latest
+        imagePullPolicy: IfNotPresent
+        ports:
+            - containerPort: 8080
+              protocol: TCP
