@@ -1,0 +1,5 @@
+resources:
+  - service-prod.yaml
+  - prod.yaml
+  - service-dev.yaml
+  - dev.yaml
