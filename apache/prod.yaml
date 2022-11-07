@@ -20,6 +20,6 @@ spec:
         lifecycle:
           postStart:
             exec:
-              command: ["/bin/sh", "-c", "echo this is prod > /usr/local/apache2/htdocs/index.html"]
+              command: ["/bin/sh", "-c", "echo this is the new prod > /usr/local/apache2/htdocs/index.html"]
         ports:
         - containerPort: 80
