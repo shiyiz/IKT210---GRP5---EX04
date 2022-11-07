@@ -6,7 +6,7 @@ metadata:
   labels:
     app: apache-prod
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: apache-prod
@@ -33,7 +33,7 @@ metadata:
 spec:
   type: NodePort
   selector:
-    app: apache
+    app: apache-prod
   ports:
   - port: 80
     targetPort: 80
